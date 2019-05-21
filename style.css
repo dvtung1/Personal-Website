@@ -2,6 +2,7 @@
 	height: 100vh;
 	padding-top: 8rem;
 	margin-bottom: 0;
+	background-color: #f5d6c6;
 }
 
 #about h2 {
@@ -10,7 +11,7 @@
 }
 
 #selfie {
-	background: url(assets/selfie.jpg) 50% 30% no-repeat; /* 50% 50% centers image in div */
+	background: url(assets/images/selfie.jpg) 50% 30% no-repeat; /* 50% 50% centers image in div */
 	width: 30rem;
 	height: 30rem;
 	border-radius: 50%;
@@ -19,10 +20,28 @@
 
 #description {
 	text-align: justify;
+	line-height: 2;
 }
 
 a i {
 	padding-top: 1.5rem;
 	font-size: 2.2rem;
 	margin: 0 0.5rem;
+}
+
+#about {
+	padding-bottom: 8rem;
+}
+
+#resume {
+	background-color: #e5e4e0;
+}
+
+#resume h2 {
+	padding-top: 6rem;
+	padding-bottom: 3rem;
+}
+
+#resume .row {
+	padding-bottom: 3rem;
 }
