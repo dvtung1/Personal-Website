@@ -1,5 +1,9 @@
 .jumbotron {
 	height: 100vh;
-	padding-top: 170px;
+	padding-top: 10rem;
 	margin-bottom: 0;
 }
+
+/* #typed {
+	font-size: 3rem;
+} */
