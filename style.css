@@ -47,6 +47,11 @@ a i {
 }
 
 #resume .row img {
-	max-width: 70%;
-	float: none;
+	max-width: 30%;
+}
+
+@media only screen and (min-width: 768px) {
+	#resume .row img {
+		max-width: 70%;
+	}
 }
