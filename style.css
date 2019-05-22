@@ -45,3 +45,8 @@ a i {
 #resume .row {
 	padding-bottom: 3rem;
 }
+
+#resume .row img {
+	max-width: 70%;
+	float: none;
+}
