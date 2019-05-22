@@ -16,6 +16,11 @@
 	height: 30rem;
 	border-radius: 50%;
 	margin: 0 auto;
+	transition: transform 1.2s;
+}
+
+#selfie:hover {
+	transform: scale(1.1);
 }
 
 #description {
