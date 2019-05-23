@@ -1,6 +1,5 @@
 * {
 	line-height: 1.75;
-	text-align: justify;
 }
 
 .jumbotron {
@@ -30,6 +29,10 @@
 
 .popup:hover {
 	transform: scale(1.05);
+}
+
+#description {
+	text-align: justify;
 }
 
 /* Icon for contacts */
