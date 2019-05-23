@@ -11,16 +11,20 @@
 }
 
 #selfie {
-	background: url(assets/images/selfie.jpg) 50% 30% no-repeat; /* 50% 50% centers image in div */
-	width: 30rem;
-	height: 30rem;
-	border-radius: 50%;
+	background: url(assets/images/selfie.jpg) 50% 29% no-repeat; /* 50% 50% centers image in div */
+	width: 20rem;
+	max-width: 100%;
+	height: 20rem;
+	border-radius: 20%;
 	margin: 0 auto;
-	transition: transform 1.2s;
 }
 
-#selfie:hover {
-	transform: scale(1.1);
+.popup {
+	transition: transform 1s;
+}
+
+.popup:hover {
+	transform: scale(1.05);
 }
 
 #description {
@@ -28,10 +32,11 @@
 	line-height: 2;
 }
 
+/* Icon for contacts */
 a i {
+	font-size: 2.5rem;
 	padding-top: 1.5rem;
-	font-size: 2.2rem;
-	margin: 0 0.5rem;
+	margin: 0 3%;
 }
 
 #about {
@@ -51,12 +56,30 @@ a i {
 	padding-bottom: 3rem;
 }
 
-#resume .row img {
-	max-width: 30%;
+#purdue_logo {
+	width: 11rem;
+}
+
+@media only screen and (min-width: 600px) {
+	#selfie {
+		background-position-y: 35%;
+		width: 30rem;
+		height: 30rem;
+		border-radius: 50%;
+	}
 }
 
 @media only screen and (min-width: 768px) {
-	#resume .row img {
-		max-width: 70%;
+	#purdue_logo {
+		width: 13rem;
+	}
+}
+@media only screen and (min-width: 992px) {
+	#purdue_logo {
+		width: 15rem;
+	}
+	a i {
+		padding-top: 1.5rem;
+		margin: 0 0.5rem;
 	}
 }
