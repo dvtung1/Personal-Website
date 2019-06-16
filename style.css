@@ -9,7 +9,7 @@
 	background-color: #f5d6c6;
 }
 
-#about h2 {
+.titleAlign {
 	padding-top: 6rem;
 	padding-bottom: 3rem;
 }
@@ -42,17 +42,12 @@ a i {
 	margin: 0 3%;
 }
 
-#about {
+.spaceBottom {
 	padding-bottom: 8rem;
 }
 
 #resume {
 	background-color: #e5e4e0;
-}
-
-#resume h2 {
-	padding-top: 6rem;
-	padding-bottom: 3rem;
 }
 
 #resume .row {
@@ -61,6 +56,20 @@ a i {
 
 #purdue_logo {
 	width: 9rem;
+}
+
+.card {
+	width: 100%;
+	margin: auto;
+}
+
+#projects a {
+	text-decoration: none;
+	color: black;
+}
+#projects a:hover {
+	color: black;
+	text-decoration: none;
 }
 
 @media only screen and (min-width: 600px) {
