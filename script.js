@@ -18,16 +18,25 @@ var typed = new Typed("#typed", {
 	backDelay: 950,
 	backSpeed: 20,
 	onComplete: self => {
-		setTimeout(() => {
-			const element = document.querySelector(".jumbotron");
-			element.classList.add("animated", "hinge", "slower");
-			element.addEventListener("animationend", function() {
-				element.style.display = "none";
-			});
-		}, 1500);
+		// setTimeout(() => {
+		// 	const element = document.querySelector(".jumbotron");
+		// 	element.classList.add("animated", "hinge", "slower");
+		// 	element.addEventListener("animationend", function() {
+		// 		element.style.display = "none";
+		// 	});
+		// }, 1500);
 	}
 });
 
+$(".navbar-nav .nav-link").click(function() {
+	$(".navbar-nav .nav-link").removeClass("active");
+	$(this).addClass("active");
+});
+
+$(window).scroll(function() {
+	const viewportHeight = $(window).height();
+	$("nav").toggleClass("scrolled", $(this).scrollTop() > viewportHeight);
+});
 // const buttonHinge = document.querySelector("#hinge");
 // buttonHinge.addEventListener("click", () => {
 // 	const element = document.querySelector(".jumbotron");
