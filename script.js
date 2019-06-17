@@ -28,15 +28,39 @@ var typed = new Typed("#typed", {
 	}
 });
 
-$(".navbar-nav .nav-link").click(function() {
-	$(".navbar-nav .nav-link").removeClass("active");
-	$(this).addClass("active");
+//update the navbar based on corresponding section
+var sections = $("section"),
+	nav = $("nav"),
+	nav_height = nav.outerHeight(),
+	viewportHeight = $(window).height();
+
+$(window).on("scroll", function() {
+	var cur_pos = $(this).scrollTop();
+	if ($(this).scrollTop() < viewportHeight) {
+		$("nav").removeClass("navbar-dark scrolled");
+		$("nav").addClass("navbar-light");
+	} else {
+		$("nav").removeClass("navbar-light");
+		$("nav").addClass("navbar-dark scrolled");
+	}
+	// $("nav").toggleClass("scrolled", $(this).scrollTop() > viewportHeight);
+
+	sections.each(function() {
+		var top = $(this).offset().top - nav_height,
+			bottom = top + $(this).outerHeight();
+
+		if (cur_pos >= top && cur_pos <= bottom) {
+			nav.find("a").removeClass("active");
+			sections.removeClass("active");
+
+			$(this).addClass("active");
+			nav.find('a[href="#' + $(this).attr("id") + '"]').addClass(
+				"active"
+			);
+		}
+	});
 });
 
-$(window).scroll(function() {
-	const viewportHeight = $(window).height();
-	$("nav").toggleClass("scrolled", $(this).scrollTop() > viewportHeight);
-});
 // const buttonHinge = document.querySelector("#hinge");
 // buttonHinge.addEventListener("click", () => {
 // 	const element = document.querySelector(".jumbotron");

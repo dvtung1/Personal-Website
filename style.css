@@ -74,12 +74,13 @@ a i {
 }
 .bg-dark {
 	background: transparent !important;
-	transition: background 0.3s;
+	transition: background 0.4s;
 }
 .bg-dark.scrolled {
 	background: #343a40 !important ;
-	transition: background 0.3s;
+	transition: background 0.4s;
 }
+
 @media only screen and (min-width: 600px) {
 	#purdue_logo {
 		width: 11rem;
