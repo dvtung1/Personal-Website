@@ -17,15 +17,7 @@ var typed = new Typed("#typed", {
 	startDelay: 700,
 	backDelay: 950,
 	backSpeed: 20,
-	onComplete: self => {
-		// setTimeout(() => {
-		// 	const element = document.querySelector(".jumbotron");
-		// 	element.classList.add("animated", "hinge", "slower");
-		// 	element.addEventListener("animationend", function() {
-		// 		element.style.display = "none";
-		// 	});
-		// }, 1500);
-	}
+	onComplete: self => {}
 });
 
 //update the navbar based on corresponding section
@@ -51,9 +43,6 @@ $(window).on("scroll", function() {
 
 		if (cur_pos >= top && cur_pos <= bottom) {
 			nav.find("a").removeClass("active");
-			sections.removeClass("active");
-
-			$(this).addClass("active");
 			nav.find('a[href="#' + $(this).attr("id") + '"]').addClass(
 				"active"
 			);
@@ -61,11 +50,12 @@ $(window).on("scroll", function() {
 	});
 });
 
-// const buttonHinge = document.querySelector("#hinge");
-// buttonHinge.addEventListener("click", () => {
-// 	const element = document.querySelector(".jumbotron");
-// 	element.classList.add("animated", "hinge", "slower");
-// 	element.addEventListener("animationend", function() {
-// 		element.style.display = "none";
-// 	});
-// });
+const buttonHinge = document.querySelector("#hinge");
+buttonHinge.addEventListener("click", () => {
+	const element = document.querySelector(".jumbotron");
+	element.classList.add("animated", "hinge", "slower");
+	element.addEventListener("animationend", function() {
+		element.style.display = "none";
+	});
+	viewportHeight = 0;
+});

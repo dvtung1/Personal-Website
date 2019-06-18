@@ -81,6 +81,27 @@ a i {
 	transition: background 0.4s;
 }
 
+#footer {
+	background-color: #e5e4e0;
+	height: 7.5rem;
+	padding-top: 1rem;
+}
+
+#footer div {
+	display: inline-block;
+	position: absolute;
+}
+#footer div p {
+	margin: 0;
+}
+#footer .copyright {
+	left: 3rem;
+}
+
+#footer .contacts {
+	right: 3rem;
+}
+
 @media only screen and (min-width: 600px) {
 	#purdue_logo {
 		width: 11rem;
