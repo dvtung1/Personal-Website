@@ -59,3 +59,27 @@ buttonHinge.addEventListener("click", () => {
 	});
 	viewportHeight = 0;
 });
+
+//copy to clipboard
+$(".copy_text").click(function(e) {
+	copyToClipboard(e.target);
+});
+
+function copyToClipboard(element) {
+	var $temp = $("<input>");
+	$("body").append($temp);
+	$temp.val($(element).text()).select();
+	document.execCommand("copy");
+	$temp.remove();
+}
+
+//show up "copied" dialog
+$(".copy_text").click(showDialog);
+
+function showDialog(e) {
+	var popup = document.getElementById("myPopup");
+	popup.classList.add("show");
+	setTimeout(function() {
+		popup.classList.remove("show");
+	}, 1000);
+}
