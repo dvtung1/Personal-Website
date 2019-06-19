@@ -7,11 +7,7 @@ var options = {
 };
 
 var typed = new Typed("#typed", {
-	strings: [
-		"Hello, World!",
-		"My name is Tung",
-		"Let's begin <i style='font-size: 30px' class='em em-100'></i>"
-	],
+	strings: ["Hello, World!", "My name is Tung", "Let's begin"],
 	typeSpeed: 60,
 	showCursor: true,
 	startDelay: 700,
@@ -81,5 +77,5 @@ function showDialog(e) {
 	popup.classList.add("show");
 	setTimeout(function() {
 		popup.classList.remove("show");
-	}, 1000);
+	}, 700);
 }
