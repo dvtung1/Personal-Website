@@ -4,9 +4,12 @@
 
 .jumbotron {
 	height: 100vh;
-	padding-top: 8rem;
+	padding-top: 35vh;
 	margin-bottom: 0;
 	background-color: #f5d6c6;
+	background: url(https://images.pexels.com/photos/207301/pexels-photo-207301.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&w=500)
+		center center no-repeat;
+	background-size: cover;
 }
 
 .titleAlign {
@@ -48,6 +51,9 @@ a i {
 
 #resume {
 	background-color: #e5e4e0;
+	background: url(https://images.pexels.com/photos/872958/pexels-photo-872958.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+		60% center no-repeat;
+	background-size: cover;
 }
 
 #resume .row {
@@ -62,6 +68,11 @@ a i {
 	width: 100%;
 	margin: auto;
 	margin-bottom: 3rem;
+}
+#projects {
+	background: url(https://images.pexels.com/photos/733852/pexels-photo-733852.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350)
+		center center no-repeat;
+	background-size: cover;
 }
 
 #projects a {
