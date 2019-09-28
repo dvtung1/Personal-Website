@@ -4,12 +4,17 @@
 
 .jumbotron {
 	height: 100vh;
-	padding-top: 35vh;
+	padding: 0;
 	margin-bottom: 0;
-	background-color: #f5d6c6;
-	background: url(https://images.pexels.com/photos/207301/pexels-photo-207301.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&w=500)
-		center center no-repeat;
-	background-size: cover;
+}
+
+.jumbotron .container {
+	position: relative;
+	padding: 0;
+	/* padding-top: 35vh; */
+	width: 50%;
+	top: 25%;
+	color: white;
 }
 
 .titleAlign {
@@ -85,11 +90,11 @@ a i {
 }
 .bg-dark {
 	background: transparent !important;
-	transition: background 0.4s;
+	/* transition: background 0s; */
 }
 .bg-dark.scrolled {
-	background: #343a40 !important ;
-	transition: background 0.4s;
+	background: #232741 !important ;
+	/* transition: background 0s; */
 }
 
 #footer {

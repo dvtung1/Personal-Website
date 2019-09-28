@@ -38,9 +38,14 @@
 			type="text/css"
 			href="assets/css/hover-min.css"
 		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="assets/css/particles.css"
+		/>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 			<div class="container">
 				<a class="navbar-brand" href="#">Tung Dao</a>
 				<button
@@ -65,14 +70,14 @@
 				</div>
 			</div>
 		</nav>
+		</div> 
 		<section id="header">
-			<div class="jumbotron">
+			<div class="jumbotron">		
+				<div id="particles-js">
 				<div class="container text-center">
 					<span id="typed" class="display-2 font-italic"></span>
-
 					<hr class="my-4" />
 					<p class="lead">
-						<!-- Click the button to make this disappear -->
 						Welcome to my website
 					</p>
 					<a
@@ -435,7 +440,9 @@
 		</section>
 		<section id="footer">
 			<div class="copyright">
-				<p><b><i class="far fa-copyright"></i> 2019 Tung Dao</b></p>
+				<p>
+					<b><i class="far fa-copyright"></i> 2019 Tung Dao</b>
+				</p>
 			</div>
 			<div class="contacts popup">
 				<span class="popuptext" id="myPopup">Copied!</span>
@@ -449,12 +456,14 @@
 				</p>
 			</div>
 		</section>
-
+		<!-- Particles.js -->
+		<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 			crossorigin="anonymous"
 		></script>
+		<!---->
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
 			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
