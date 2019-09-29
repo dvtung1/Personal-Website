@@ -10,7 +10,7 @@ var typed = new Typed("#typed", {
 	strings: ["Hello, World!", "My name is Tung", "Let's begin"],
 	typeSpeed: 60,
 	showCursor: true,
-	startDelay: 700,
+	startDelay: 2900,
 	backDelay: 950,
 	backSpeed: 20,
 	onComplete: self => {}
@@ -43,16 +43,8 @@ $(window).on("scroll", function() {
 		}
 	});
 });
-
-const buttonHinge = document.querySelector("#hinge");
-buttonHinge.addEventListener("click", () => {
-	const element = document.querySelector(".jumbotron");
-	element.classList.add("animated", "hinge", "slower");
-	element.addEventListener("animationend", function() {
-		element.style.display = "none";
-	});
-	viewportHeight = 0;
-});
+const headerElem = document.querySelector(".jumbotron .container");
+headerElem.classList.add("animated", "bounceInUp", "delay-1s", "slow");
 
 //copy to clipboard
 $(".copy_text").click(function(e) {

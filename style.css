@@ -2,6 +2,10 @@
 	line-height: 1.75;
 }
 
+hr {
+	background: white;
+}
+
 .jumbotron {
 	height: 100vh;
 	padding: 0;
@@ -13,7 +17,7 @@
 	padding: 0;
 	/* padding-top: 35vh; */
 	width: 50%;
-	top: 25%;
+	top: 30%;
 	color: white;
 }
 
