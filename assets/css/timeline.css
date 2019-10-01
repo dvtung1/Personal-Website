@@ -148,7 +148,7 @@ blockquote {
 	width: fit-content;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 	.timeline::before {
 		left: 15px;
 		width: 5px;

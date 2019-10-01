@@ -5,13 +5,13 @@ $(function() {
 	window.sr = ScrollReveal();
 
 	if ($(window).width() < 768) {
-		if ($(".timeline-content").hasClass("js--fadeInLeft")) {
-			$(".timeline-content")
-				.removeClass("js--fadeInLeft")
-				.addClass("js--fadeInRight");
-		}
-
 		sr.reveal(".js--fadeInRight", {
+			origin: "right",
+			distance: "300px",
+			easing: "ease-in-out",
+			duration: 800
+		});
+		sr.reveal(".js--fadeInLeft", {
 			origin: "right",
 			distance: "300px",
 			easing: "ease-in-out",
@@ -32,20 +32,6 @@ $(function() {
 			duration: 800
 		});
 	}
-
-	sr.reveal(".js--fadeInLeft", {
-		origin: "left",
-		distance: "300px",
-		easing: "ease-in-out",
-		duration: 800
-	});
-
-	sr.reveal(".js--fadeInRight", {
-		origin: "right",
-		distance: "300px",
-		easing: "ease-in-out",
-		duration: 800
-	});
 });
 
 var options = {
@@ -118,7 +104,7 @@ function showDialog(e) {
 }
 
 //particles in homepage
-particlesJS("particles-js", {
+let particle_properties = {
 	particles: {
 		number: { value: 80, density: { enable: true, value_area: 800 } },
 		color: { value: "#ffffff" },
@@ -164,7 +150,7 @@ particlesJS("particles-js", {
 			resize: true
 		},
 		modes: {
-			grab: { distance: 400, line_linked: { opacity: 1 } },
+			grab: { distance: 200, line_linked: { opacity: 0.2 } },
 			bubble: {
 				distance: 250,
 				size: 0,
@@ -172,10 +158,17 @@ particlesJS("particles-js", {
 				opacity: 0,
 				speed: 3
 			},
-			repulse: { distance: 400, duration: 0.4 },
+			repulse: { distance: 200, duration: 0.4 },
 			push: { particles_nb: 4 },
 			remove: { particles_nb: 2 }
 		}
 	},
 	retina_detect: true
-});
+};
+
+//if the device is a phone, disable hover feature
+if ($(window).width() < 768) {
+	particle_properties["interactivity"]["events"]["onhover"]["enable"] = false;
+}
+
+particlesJS("particles-js", particle_properties);
