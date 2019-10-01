@@ -158,7 +158,7 @@ let particle_properties = {
 				opacity: 0,
 				speed: 3
 			},
-			repulse: { distance: 200, duration: 0.4 },
+			repulse: { distance: 200, duration: 0.7 },
 			push: { particles_nb: 4 },
 			remove: { particles_nb: 2 }
 		}
