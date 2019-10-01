@@ -15,7 +15,7 @@ body {
 	content: "";
 	background: #c5cae9;
 	width: 7px;
-	height: 95%;
+	height: 100%;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -53,7 +53,7 @@ body {
 .timeline-content {
 	position: relative;
 	width: 45%;
-	padding: 10px 20px;
+	padding: 30px 30px;
 	border-radius: 4px;
 	background: #f5f5f5;
 	box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
