@@ -58,12 +58,11 @@ a i {
 	padding-bottom: 8rem;
 }
 
-#resume .education {
-	background-color: #e5e4e0;
+/* #resume .education {
 	background: url(https://images.pexels.com/photos/872958/pexels-photo-872958.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-		73% 50% no-repeat;
-	background-size: initial;
-}
+		bottom left no-repeat;
+	background-size: cover;
+} */
 
 #resume {
 	background-color: #e3e3e3;
@@ -81,6 +80,7 @@ a i {
 	width: 100%;
 	margin: auto;
 	margin-bottom: 3rem;
+	border: 0.13rem #c5cae9 solid;
 }
 
 .timeline h2 {
@@ -114,9 +114,13 @@ a i {
 }
 
 #footer {
-	background-color: #e5e4e0;
+	background-color: #232741;
+	background: url(https://images.unsplash.com/photo-1462007361476-49e695345154?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)
+		center 70% no-repeat;
+	background-size: cover;
 	height: 7.5rem;
 	padding-top: 1rem;
+	color: white;
 }
 
 #footer div {
@@ -139,10 +143,6 @@ a i {
 	#purdue_logo {
 		width: 11rem;
 	}
-	#resume .education {
-		background-position: 70% 80%;
-	}
-
 	#selfie {
 		background-position-y: 35%;
 		width: 30rem;

@@ -4,32 +4,52 @@
 $(function() {
 	window.sr = ScrollReveal();
 
-	if ($(window).width() < 768) {
+	if ($(window).width() < 992) {
 		sr.reveal(".js--fadeInRight", {
 			origin: "right",
 			distance: "30px",
 			easing: "ease-in-out",
-			duration: 800
+			duration: 800,
+			delay: 300
 		});
 		sr.reveal(".js--fadeInLeft", {
 			origin: "right",
 			distance: "30px",
 			easing: "ease-in-out",
-			duration: 800
+			duration: 800,
+			delay: 300
 		});
-	} else {
+	} else if ($(window).width() < 1200) {
 		sr.reveal(".js--fadeInLeft", {
 			origin: "left",
-			distance: "80px",
+			distance: "45px",
 			easing: "ease-in-out",
-			duration: 800
+			duration: 800,
+			delay: 300
 		});
 
 		sr.reveal(".js--fadeInRight", {
 			origin: "right",
-			distance: "80px",
+			distance: "45px",
 			easing: "ease-in-out",
-			duration: 800
+			duration: 800,
+			delay: 300
+		});
+	} else {
+		sr.reveal(".js--fadeInLeft", {
+			origin: "left",
+			distance: "60px",
+			easing: "ease-in-out",
+			duration: 800,
+			delay: 300
+		});
+
+		sr.reveal(".js--fadeInRight", {
+			origin: "right",
+			distance: "60px",
+			easing: "ease-in-out",
+			duration: 800,
+			delay: 300
 		});
 	}
 });
@@ -150,7 +170,7 @@ let particle_properties = {
 			resize: true
 		},
 		modes: {
-			grab: { distance: 100, line_linked: { opacity: 0.2 } },
+			grab: { distance: 100, line_linked: { opacity: 0.3 } },
 			bubble: {
 				distance: 250,
 				size: 0,
