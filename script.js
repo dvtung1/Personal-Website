@@ -60,7 +60,7 @@ var options = {
 };
 
 var typed = new Typed("#typed", {
-	strings: ["Hello, World!", "My name is Tung", "Let's begin"],
+	strings: ["Hello, World!", "I'm Tung", "Let's begin"],
 	typeSpeed: 60,
 	showCursor: true,
 	startDelay: 2900,

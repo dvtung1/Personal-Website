@@ -144,9 +144,18 @@ blockquote {
 	position: absolute;
 	top: 15px;
 	left: 122%;
-	width: fit-content;
+	display: table; /* Edge */
+	width: intrinsic; /* Safari/WebKit uses a non-standard name */
+	width: -moz-max-content; /* Firefox/Gecko */
+	width: -webkit-max-content; /* Chrome */
 }
-
+@supports (-ms-ime-align: auto) {
+	/* Edge */
+	.timeline-item:nth-child(even) .timeline-content .date {
+		left: auto;
+		right: 142%;
+	}
+}
 @media screen and (max-width: 992px) {
 	.timeline::before {
 		left: 15px;

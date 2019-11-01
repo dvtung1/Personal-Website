@@ -80,7 +80,8 @@ a i {
 	width: 100%;
 	margin: auto;
 	margin-bottom: 3rem;
-	border: 0.13rem #c5cae9 solid;
+	border: 0.3rem rgb(227, 227, 227) solid;
+	/* border: 0.13rem #c5cae9 solid; */
 }
 
 .timeline h2 {
