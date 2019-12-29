@@ -170,7 +170,7 @@ let particle_properties = {
 			resize: true
 		},
 		modes: {
-			grab: { distance: 100, line_linked: { opacity: 0.3 } },
+			grab: { distance: 350, line_linked: { opacity: 0.5 } },
 			bubble: {
 				distance: 250,
 				size: 0,
@@ -178,7 +178,7 @@ let particle_properties = {
 				opacity: 0,
 				speed: 3
 			},
-			repulse: { distance: 100, duration: 0.5 },
+			repulse: { distance: 350, duration: 0.5 },
 			push: { particles_nb: 4 },
 			remove: { particles_nb: 2 }
 		}
