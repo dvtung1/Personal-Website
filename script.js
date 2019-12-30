@@ -192,3 +192,8 @@ if ($(window).width() < 768) {
 }
 
 particlesJS("particles-js", particle_properties);
+
+//the carousel will not auto cycle anymore
+$(".carousel").carousel({
+	interval: false
+});

@@ -319,81 +319,60 @@
 		<section id="projects" class="spaceBottom">
 			<div class="container">
 				<h2 class="text-center titleAlign">Projects</h2>
-				<div class="row">
-					<div class="col-12 col-lg-6">
-						<div class="card scaleAnimation">
-							<a
-								href="https://github.com/dvtung1/R-Guess-B"
-								target="_blank"
-							>
-								<img
-									src="assets/images/rgb pic.PNG"
-									class="card-img-top"
-									alt="RGuessB image"
-								/>
-								<div class="card-body">
-									<h5 class="card-title">RGuessB</h5>
-									<p class="card-text">
-										An online RGB guessing game developed
-										using Angular and Express framework
-									</p>
-									<hr />
-									<!--  -->
-									<span class="badge badge-pill badge-info"
-										>Express</span
-									>
-									<span class="badge badge-pill badge-info"
-										>Angular</span
-									>
-									<span class="badge badge-pill badge-info"
-										>Backendless BaaS</span
-									>
-									<span class="badge badge-pill badge-info"
-										>RxJS</span
-									>
-									<span class="badge badge-pill badge-info"
-										>OAuth2</span
-									>
-									<span class="badge badge-pill badge-info"
-										>JWT</span
-									>
-									<span class="badge badge-pill badge-info"
-										>Socket.IO</span
-									>
-									<span class="badge badge-pill badge-info"
-										>AWS</span
-									>
-									<span class="badge badge-pill badge-info"
-										>Bootstrap</span
-									>
-
-									<span class="badge badge-pill badge-info"
-										>Git</span
-									>
-								</div>
-							</a>
+				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+					  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+					  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+					  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+					  <div class="carousel-item active" data-toggle="modal" data-target="#purfect-dining-modal">
+						<img src="assets/images/purfect-pic.PNG" class="d-block w-100" alt="Screenshot of PUrfect Dining project">
+						<div class="carousel-caption d-none d-md-block">
+						  <h5>PUrfect Dining</h5>
 						</div>
+					  </div>
+					  <div class="carousel-item" data-toggle="modal" data-target="#rguessb-modal">
+						<img src="assets/images/rgb pic.PNG" class="d-block w-100" alt="Screenshot of RGuessB project">
+						<div class="carousel-caption d-none d-md-block">
+						  <h5>RGuessB</h5>
+						</div>
+					  </div>
+					  <div class="carousel-item" data-toggle="modal" data-target="#irc-modal">
+						<img src="assets/images/irc-pic.PNG" class="d-block w-100" alt="Screenshot of IRC Chat server project">
+						<div class="carousel-caption d-none d-md-block">
+						  <h5>IRC Chat Server</h5>
+						</div>
+					  </div>
 					</div>
-					<div class="col-12 col-lg-6">
-						<div class="card scaleAnimation">
-							<a
-								href="https://github.com/dvtung1/PUrfectDining-Web"
-								target="_blank"
-							>
-								<img
-									src="assets/images/purfect-pic.PNG"
-									class="card-img-top"
-									alt="PUrfect Dining image"
-								/>
-								<div class="card-body">
-									<h5 class="card-title">PUrfect Dining</h5>
-									<p class="card-text">
-										A Purdue dining court rating system,
-										using Raspberry Pi for hardware, Angular
-										and Express framework for website
-									</p>
-									<hr />
-									<span class="badge badge-pill badge-info"
+					<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+					  <span class="outer-border-for-icon"><div class="carousel-control-prev-icon" aria-hidden="true"></div></span>
+					  <span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+					  <span class="outer-border-for-icon"><span class="carousel-control-next-icon" aria-hidden="true"></span></span>
+					  <span class="sr-only">Next</span>
+					</a>
+				</div>
+
+				<!-- PURFECT DINING -->
+				<div class="modal fade" id="purfect-dining-modal" tabindex="-1" role="dialog" aria-labelledby="Purfect Dining Modal" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title">A Purdue dining court rating system</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+						  <ul>
+							  <li>Developed a RESTful web application using Express and Angular to rate and give feedbacks on dining courts at Purdue, show current menu, display average score based on the user ratings, and feature trending dining courts</li>
+							  <li>Designed a Raspberry Pi based system to give diners ability to rate their experience at Purdue dining court physically by pressing buttons and wrote a NodeJS-script for the Pi using Johnny-Five library to send rating data to the server</li>
+							  <li>Collaborated with 3 members on improving user interface and generating charts for rating data via Chart.js library</li>
+							  <li>Hosted the frontend on AWS S3 and the backend on Heroku platform</li>
+						  </ul>
+						  <span class="badge badge-pill badge-info"
 										>Express</span
 									>
 									<span class="badge badge-pill badge-info"
@@ -424,25 +403,89 @@
 									<span class="badge badge-pill badge-info"
 										>Git</span
 									>
-								</div>
-							</a>
 						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						  <a class="btn btn-primary" role="button" href="https://github.com/dvtung1/PUrfectDining-Web"  target="_blank">Github</a>
+
+						</div>
+					  </div>
 					</div>
-					<div class="col-12 col-lg-6">
-						<div class="card scaleAnimation">
-							<img
-								src="assets/images/irc-pic.PNG"
-								class="card-img-top"
-								alt="IRC Chat Server image"
-							/>
-							<div class="card-body">
-								<h5 class="card-title">IRC Chat Server</h5>
-								<p class="card-text">
-									A real-time IRC Chat Server built with Qt
-									framework and C++ STL library
-								</p>
-								<hr />
-								<span class="badge badge-pill badge-info"
+				</div>
+				<!--RGuessB-->
+				<div class="modal fade" id="rguessb-modal" tabindex="-1" role="dialog" aria-labelledby="RGuessB Modal" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title">An online RGB guessing game</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+						  <ul>
+							  <li>Created a RESTful gaming website using Express and Angular that provides player a random RGB color code and 6 boxes with different color and the player needs to guess the right block that matches the RGB code in order to get a point and advance</li>
+							  <li>Used Bootstrap to make it a responsive mobile-friendly web application</li>
+							  <li>Applied RxJS Observables and Socket.IO library for displaying top three players’ score in real time</li>
+							  <li>Implemented OAuth2.0 authentication protocol with the help of JWT library</li>
+							  <li>Deployed both frontend and backend on AWS Elastic Beanstalk</li>
+						  </ul>
+						  <span class="badge badge-pill badge-info"
+										>Express</span
+									>
+									<span class="badge badge-pill badge-info"
+										>Angular</span
+									>
+									<span class="badge badge-pill badge-info"
+										>Backendless BaaS</span
+									>
+									<span class="badge badge-pill badge-info"
+										>RxJS</span
+									>
+									<span class="badge badge-pill badge-info"
+										>OAuth2</span
+									>
+									<span class="badge badge-pill badge-info"
+										>JWT</span
+									>
+									<span class="badge badge-pill badge-info"
+										>Socket.IO</span
+									>
+									<span class="badge badge-pill badge-info"
+										>AWS</span
+									>
+									<span class="badge badge-pill badge-info"
+										>Bootstrap</span
+									>
+
+									<span class="badge badge-pill badge-info"
+										>Git</span
+									>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						  <a class="btn btn-primary" role="button" href="https://github.com/dvtung1/R-Guess-B" target="_blank">Github</a>
+
+						</div>
+					  </div>
+					</div>
+				</div>
+				<!--IRC Chat server-->
+				<div class="modal fade" id="irc-modal" tabindex="-1" role="dialog" aria-labelledby="IRC Chat Server Modal" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title">A multithreading chat server</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+						  <ul>
+							 <li>Built an IRC Chat Server that can connect multiple clients to a single server using C++</li>
+							 <li>Developed GUI for the server using Qt framework</li>
+						  </ul>
+						  <span class="badge badge-pill badge-info"
 									>C++</span
 								>
 								<span class="badge badge-pill badge-info"
@@ -451,10 +494,16 @@
 								<span class="badge badge-pill badge-info"
 									>STL library</span
 								>
-							</div>
 						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						  <!-- <a class="btn btn-primary" role="button" href="#" target="_blank">Github</a> -->
+
+						</div>
+					  </div>
 					</div>
 				</div>
+
 			</div>
 		</section>
 		<section id="footer">

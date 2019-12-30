@@ -232,3 +232,50 @@ a i {
 .copy_text:hover {
 	color: #008080;
 }
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	margin: 0;
+	position: relative;
+	top: 25%;
+}
+
+.outer-border-for-icon {
+	width: 2.5rem;
+	height: 2.5rem;
+	background-color: black;
+	position: relative;
+}
+
+.carousel-caption {
+	background-color: black;
+	opacity: 0.7;
+}
+
+.carousel-indicators {
+	position: relative;
+	background-color: #232741;
+	margin: 0;
+}
+
+/* .carousel-indicators li {
+	height: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+} */
+
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+	opacity: 0.15;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+	opacity: 0.7;
+}
+
+.modal-footer a {
+	color: white !important;
+}
