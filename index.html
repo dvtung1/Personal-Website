@@ -133,16 +133,12 @@
 				<div class="row">
 					<div class="col-12 col-lg-6 order-2 order-lg-1">
 						<p id="description">
-							My name is Tung Dao. I am a 3rd-year student at
+							My name is Tung Dao. I am a senior student at
 							Purdue University majoring in
 							<b>Computer Science</b> and <b>Data Science</b>,
 							with concentrations in
 							<b>Machine Intelligence</b> and
-							<b>Software Engineering</b>. Currently, I am seeking
-							an internship opportunity in software
-							engineering/development role that will utilize my
-							critical thinking, problem solving, and programming
-							skills. Please feel free to contact me if you want
+							<b>Software Engineering</b>. Please feel free to contact me if you want
 							to reach out or have any questions.
 						</p>
 						<a
@@ -224,11 +220,9 @@
 								</li>
 								<li>
 									Introduction to the Analysis of Algorithms
-									<i>(currently taking)</i>
 								</li>
 								<li>
 									Data Mining and Machine Learning
-									<i>(currently taking)</i>
 								</li>
 							</ul>
 						</div>
@@ -261,7 +255,7 @@
 								<span class="badge badge-pill badge-info">Oracle</span>
 								<span class="badge badge-pill badge-info">JDBC</span>
 								<span class="badge badge-pill badge-info"
-									>HTML/CSS/Javascript</span
+									>HTML/CSS/JavaScript</span
 								>
 							</div>
 						</div> 
@@ -275,10 +269,13 @@
 							  </div> -->
 							  <div class="date">Aug 18 - Dec 18</div>
 							  <h2>Purdue University</h2>
-							  <h3>Undergraduate Teaching Assistant for CS193: Tools</h3>
+							  <h3>Undergraduate Teaching Assistant</h3>
 									<ul>
 											<li>
 													Coached 42 students on UNIX commands, IntelliJ debugging, Bash shell configuration, and Git version control
+											</li>
+											<li>
+												Graded homework assignments and attended bi-weekly meetings to prepare materials for the labs
 											</li>
 			
 										</ul>
@@ -294,12 +291,15 @@
 						<div class="timeline-item">
 							<div class="timeline-img"></div>
 							<div class="timeline-content js--fadeInLeft">
-								<div class="date">Sep 19 - Current</div>
+								<div class="date">Sep 19 - May 20</div>
 								<h2>CATME Smarter Teamwork</h2>
 								<h3>Part Time Technical Developer</h3>
 								<ul>
 									<li>
-												Writing Perl scripts to connect CATME backend system with D2L Brightspace learning management system for automatically importing and exporting class information for instructors.
+										Writing Perl scripts to connect CATME system with other institutions’ Learning Management System (LMS) via RESTful APIs for automatically importing and exporting class information for instructors
+									</li>
+									<li>
+										Deployed our own testing LMS instance containerized with Docker to the AWS EC2 server and performed manual test cases
 									</li>
 									
 								</ul>
@@ -308,22 +308,56 @@
 								>
 								<span class="badge badge-pill badge-info">PostgreSQL</span>
 								<span class="badge badge-pill badge-info"
-										>AWS</span
+										>AWS EC2</span
 								>
+								<span class="badge badge-pill badge-info">Docker</span>
+
+							</div>
+						</div> 
+						<div class="timeline-item">
+							<div class="timeline-img"></div>
+							<div class="timeline-content js--fadeInLeft">
+								<div class="date">Jun 20 - Aug 20</div>
+								<h2>Amazon.com</h2>
+								<h3>Software Development Engineer Intern @ Digital Accounting and Royalties Technology team</h3>
+								<ul>
+									<li>
+										Designed and developed a robust and scalable event-driven system based on Pub-Sub fanout pattern that can reprocess unbooked transactions and monitor the status of them
+									</li>
+									<li>
+										Divided the task into small batches and distributed them to multiple concurrent AWS Lambda instances using AWS Step Functions to increase efficiency and maintain stability when handling millions of transactions
+									</li>
+									<li>
+										Wrote unit and integrations tests using JUnit and Mockito, deployed to CI/CD pipeline, and kept track of the system's performance
+									</li>
+									
+								</ul>
+								<span class="badge badge-pill badge-info"
+										>AWS Lambda</span
+								>
+								<span class="badge badge-pill badge-info">AWS Step Functions</span>
+								<span class="badge badge-pill badge-info">AWS S3</span>
+								<span class="badge badge-pill badge-info">AWS Redshift</span>
+								<span class="badge badge-pill badge-info">AWS DynamoDB</span>
+								<span class="badge badge-pill badge-info">System Design</span>
+								<span class="badge badge-pill badge-info">Mockito/JUnit</span>
+								<span class="badge badge-pill badge-info">JDBC</span>
+
 							</div>
 						</div> 
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="projects" class="spaceBottom">
-			<div class="container">
+		<section id="projects" class="spaceBottom d-flex align-items-center" style="height:90vh">
+			<div class="container-fluid">
 				<h2 class="text-center titleAlign">Projects</h2>
 				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
 					  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
 					  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
 					  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+					  <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
 					</ol>
 					<div class="carousel-inner">
 					  <div class="carousel-item active" data-toggle="modal" data-target="#purfect-dining-modal">
@@ -342,6 +376,12 @@
 						<img src="assets/images/irc-pic.PNG" class="d-block w-100" alt="Screenshot of IRC Chat server project">
 						<div class="carousel-caption d-none d-md-block">
 						  <h5>IRC Chat Server</h5>
+						</div>
+					  </div>
+					  <div class="carousel-item" data-toggle="modal" data-target="#electoralanalysis-modal">
+						<img src="assets/images/electoralanalysis-pic.PNG" class="d-block w-100" alt="Screenshot of Electoral Analysis project">
+						<div class="carousel-caption d-none d-md-block">
+						  <h5>Electoral Analysis</h5>
 						</div>
 					  </div>
 					</div>
@@ -373,7 +413,7 @@
 							  <li>Hosted the frontend on AWS S3 and the backend on Heroku platform</li>
 						  </ul>
 						  <span class="badge badge-pill badge-info"
-										>Express</span
+										>ExpressJS</span
 									>
 									<span class="badge badge-pill badge-info"
 										>Angular</span
@@ -405,8 +445,8 @@
 									>
 						</div>
 						<div class="modal-footer">
-						  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						  <a class="btn btn-primary" role="button" href="https://github.com/dvtung1/PUrfectDining-Web"  target="_blank">Github</a>
+							<a class="btn btn-primary" role="button" href="https://github.com/dvtung1/PUrfectDining-Web"  target="_blank">Github</a>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
 						</div>
 					  </div>
@@ -431,7 +471,7 @@
 							  <li>Deployed both frontend and backend on AWS Elastic Beanstalk</li>
 						  </ul>
 						  <span class="badge badge-pill badge-info"
-										>Express</span
+										>ExpressJS</span
 									>
 									<span class="badge badge-pill badge-info"
 										>Angular</span
@@ -463,8 +503,8 @@
 									>
 						</div>
 						<div class="modal-footer">
-						  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						  <a class="btn btn-primary" role="button" href="https://github.com/dvtung1/R-Guess-B" target="_blank">Github</a>
+							<a class="btn btn-primary" role="button" href="https://github.com/dvtung1/R-Guess-B" target="_blank">Github</a>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
 						</div>
 					  </div>
@@ -504,6 +544,48 @@
 					</div>
 				</div>
 
+				<!-- Electoral Analysis -->
+				<div class="modal fade" id="electoralanalysis-modal" tabindex="-1" role="dialog" aria-labelledby="Electoral Analysis Modal" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title">A project developed during HackPSU 2020</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+						  <ul>
+							 <li>We set out to try and measure the affect of the electoral college in the election and diversity’s role in electoral votes by measuring racial demographics and electoral votes per capita</li>
+						  </ul>
+						  <span class="badge badge-pill badge-info"
+									>HTML/CSS/JavaScript</span
+								>
+								<span class="badge badge-pill badge-info"
+									>ExpressJS</span
+								>
+								<span class="badge badge-pill badge-info"
+									>Bootstrap</span
+								>
+								<span class="badge badge-pill badge-info"
+									>Heroku</span
+								>
+								<span class="badge badge-pill badge-info"
+									>Bootstrap</span
+								>
+								<span class="badge badge-pill badge-info"
+									>Git</span
+								>
+						</div>
+						<div class="modal-footer">
+						<a class="btn btn-primary" role="button" href="https://hackpsu.daoviettung.com/" target="_blank">Website</a>
+						  <a class="btn btn-primary" role="button" href="https://github.com/dvtung1/Electoral_Graphs" target="_blank">Github</a>
+						  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+						</div>
+					  </div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section id="footer">

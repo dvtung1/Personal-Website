@@ -268,7 +268,7 @@ a i {
 .carousel-control-prev,
 .carousel-control-prev:focus,
 .carousel-control-next:focus {
-	opacity: 0.15;
+	opacity: 0;
 }
 
 .carousel-control-next:hover,
@@ -278,4 +278,8 @@ a i {
 
 .modal-footer a {
 	color: white !important;
+}
+
+.container-fluid {
+	max-width: 1500px;
 }
